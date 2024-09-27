@@ -1,0 +1,181 @@
+ @media screen and (max-width: 1400px){
+    #home{
+        max-height: fit-content;
+    }
+    .grouped-design-div{
+        flex-wrap: wrap;
+    }
+    #hamburger-nav{
+        height: 5rem;
+    }
+    .Noble-logo{
+        width: 120px;
+        height: 50px; 
+    }
+    section{
+        width: 100%;
+    }
+}
+
+ @media screen and (max-width: 1200px){
+    #header-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .grouped-design-div{
+        display: block;
+    }
+    section, .grouped-design-div{
+        height: fit-content;
+    }
+    #first-text{
+        font-size: 2rem;
+    }
+    section{
+        margin:0 5%;
+        height: min-content;
+        width: 100%;
+        margin: 2rem 0rem;
+        margin-bottom: 0;
+    }
+    #designs{
+        max-height: fit-content;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .grouped-design-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        column-gap: 5px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        flex-shrink: 1;
+    }
+    .each-design-div{
+        margin-bottom: 2rem;
+    }    
+}
+
+@media only screen and (max-width: 1200px) {
+    #home{
+        max-height: fit-content;
+    }
+    .image-designs{
+        display: flex;
+        align-items: center;
+        width: 250px;
+        height: 230px;
+    }
+    #about{
+        max-height: fit-content;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #contact{
+        margin-top: 0;
+    }
+    section{
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Welcome-speech{
+        font-size: 1rem;
+        height: 10rem;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    #first-text{
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    #home{
+        height: fit-content;
+        margin-bottom: 0;
+    }
+    .specify-secions-name{
+        font-size: 20px;
+    }
+    section{
+        width: 100%;
+        position: relative;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 1;
+        padding-bottom: 3rem;
+    }
+    #hamburger-nav
+    {
+        position: fixed;
+        z-index: 100;
+    }
+    #designs{
+        height: fit-content;
+        margin: 0;
+    }
+    .horizontal-line{
+        height: 1.1px;
+        width: 300px;
+    }
+    .image-designs{
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 270px;
+    }
+    .specify-secions{
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+    }
+    .About-Design{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 19rem;
+    }
+    .each-design-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .grouped-design-div{
+        display: block;
+    }
+    #about{
+        height: fit-content;
+        margin: 0;
+        padding-top: 0;
+    }
+    #about-all-container{
+        display: flex;
+        flex-direction: column; 
+        gap: -0rem; 
+    }
+    .about-hello-container{
+        margin-top: 0;
+    }
+    .about-pic{
+        margin-bottom: 2rem;
+    }
+    #contact{
+        max-height: fit-content;
+        margin: 0;
+    }
+    .contact-all-container{
+        width: 19rem;  
+        display: flex;
+        flex-direction: column;
+    }
+}
+

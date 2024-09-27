@@ -1,0 +1,50 @@
+@media screen and (max-width: 1200px){
+    #hamburger-nav{
+        height: 5rem;
+        position: fixed;
+        z-index: 100;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .Noble-logo{
+        width: 100px;
+        height: 50px; 
+    }
+    #header-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    section{
+        margin:0 5%;
+        height: min-content;
+        margin: 2rem 0rem;
+        position: relative;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 1;
+    }
+    .Gn-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h2{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .more-design-image{
+        width: 300px;
+        height: 270px;
+    }
+    .image-text{
+        font-size: 1rem;
+    }
+    .Decription-text{
+        gap: 1rem;
+    }
+}
+

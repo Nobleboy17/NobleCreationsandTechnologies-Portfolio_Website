@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'lato';
+    padding-top: 60px;
+}
+html{
+    scroll-behavior: smooth
+}
+
+/* TRANSITION*/
+a, .btn{
+    transition: all 300ml ease;
+}
+
+/* HEADER NAV */
+
+#header-nav{
+    box-shadow: 0px 25px 20px -30px rgba(0, 0, 0, 0.45);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(231, 229, 229);
+}
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    text-decoration-color: white;
+    color: blue;
+}
+
+a:hover{
+    color: navy;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: blue;
+}
+.Noble-logo{
+    width: 150px;
+    height: 70px;
+}
+/* HAMBURGER MENU */
+
+#hamburger-nav{
+    display: none; 
+    box-shadow: 0px 25px 20px -30px rgba(0, 0, 0, 0.45);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(231, 229, 229);
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 20px;
+    cursor: pointer;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: blue;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: blue;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+/* SECTION */
+
+section{
+    position: relative;
+    padding: 4vh;
+    height: 55vh;
+    margin: 5rem 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/* MORE DESIGN */
+
+.intro-text{
+    text-align: center;
+    color: navy;
+    margin-bottom: 1.7rem;
+}
+
+.image-designs{
+    width: 330px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.name-design{
+    font-size: 20px;
+    color: navy;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.tools{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: blue;
+}
+#sec-check{
+    justify-content: center;
+    margin-left: 7px;
+}
+.grouped-design-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.About-Design{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
